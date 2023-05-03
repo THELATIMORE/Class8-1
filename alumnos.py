@@ -30,6 +30,14 @@ def alumnos():
         print("\nlistado de los promedios de alumnos")
         print("nombre\tpromedio")
         for alumno in alumnos:
-            promedio = (alumno[1]+alumno[2]+alumno[3]/3)
+            promedio = (alumno[1]+alumno[2]+alumno[3])/3
             if promedio < 3 :
+                print(alumno[0]+"\t"+str(round(promedio,1)))
+
+    if len(alumno) > 0:
+        print("\nlistado de alumnos que perdieron la materia")
+        print("nombre\tpromedio")
+        for alumno in alumnos:
+            promedio = (alumno[1]+alumno[2]+alumno[3])/3
+            if promedio < 3:
                 print(alumno[0]+"\t"+str(round(promedio,1)))
