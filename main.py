@@ -1,4 +1,4 @@
-#import problema1
+import problema1
 
 
 edad = 12
@@ -25,6 +25,6 @@ if __name__ == '__main__':
     print()
     print(lista1)
     print()
-    #problema1.sumar_5_enteros()
+    problema1.sumar_5_enteros()
     print()
     #alumnos()
